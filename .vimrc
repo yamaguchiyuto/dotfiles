@@ -1,8 +1,3 @@
-syntax on
-autocmd FileType python setl autoindent
-autocmd FileType python setl smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-autocmd FileType python setl tabstop=8 expandtab shiftwidth=4 softtabstop=4
-
 set nocompatible               " be iMproved
 filetype off                   " required!
 set rtp+=~/.vim/bundle/vundle/
@@ -19,6 +14,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'Shougo/unite.vim'
 Bundle 'Shougo/vimfiler'
+Bundle 'Yggdroot/indentLine'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
