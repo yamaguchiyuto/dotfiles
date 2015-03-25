@@ -1,36 +1,36 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-" My Bundles here:
-"
-" original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimfiler'
-Bundle 'Yggdroot/indentLine'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non github repos
-Bundle 'git://git.wincent.com/command-t.git'
-" ...
-filetype plugin indent on     " required!
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+set fileencoding=utf-8
+set nocompatible
+filetype plugin indent on
+syntax on
+
+set number
+set ruler
+set list
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:<
+set incsearch
+set hlsearch
+set nowrap
+set showmatch
+set whichwrap=h,l
+set nowrapscan
+set ignorecase
+set smartcase
+set hidden
+set history=2000
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set helplang=en
+
+colorscheme desert
+
+nnoremap <Space>h  ^
+nnoremap <Space>l  $
+
+nnoremap <silent> tt  :<C-u>tabe<CR>
+
+inoremap jk  <Esc>
 
 " python setting
 filetype plugin on

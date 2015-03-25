@@ -5,6 +5,11 @@
 # LANG
 #
 export LANG=ja_JP.UTF-8
+# MySQL Path Setting
+export PATH=$PATH:/usr/local/mysql/bin
+
+# Python path
+export PATH=$PATH:/usr/local/Cellar/python/2.7.8_2/bin
 
 ## Default shell configuration
 #
@@ -109,6 +114,8 @@ alias du="du -h"
 alias df="df -h"
 
 alias su="su -l"
+
+alias gnuplot="/usr/local/Cellar/gnuplot/4.6.3/bin/gnuplot"
 
 ## terminal configuration
 #
